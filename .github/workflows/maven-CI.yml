@@ -31,5 +31,5 @@ jobs:
         - name: Upload generated .war to Artifact 
           uses: actions/upload-artifact@v3
           with:
-            name: mvn-hello-world-${{ steps.getVersion.outputs.version }}.zip
+            name: mvn-hello-world-${{ steps.getVersion.outputs.version }}
             path: staging  
